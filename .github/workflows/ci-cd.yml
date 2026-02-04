@@ -25,10 +25,10 @@ jobs:
         run: echo "${{ dckr_pat_-HzjZjfEtuXs_wMdUDzuD4ztw5U }}" | docker login -u "${{ keval2410 }}" --password-stdin
 
       - name: Tag image
-        run: docker tag day5-demo ${{ secrets.DOCKER_USERNAME }}/day5-demo:latest
+        run: docker tag day5-demo ${{ keval2410 }}/day5-demo:latest
 
       - name: Push image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/day5-demo:latest
+        run: docker push ${{ keval2410 }}/day5-demo:latest
 
 
 
