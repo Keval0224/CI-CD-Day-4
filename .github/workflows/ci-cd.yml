@@ -22,7 +22,7 @@ jobs:
         run: docker build -t day5-demo .
 
       - name: Login Docker Hub
-        run: echo "${{ secrets.dckr_pat_-HzjZjfEtuXs_wMdUDzuD4ztw5U }}" | docker login -u "${{ secrets.keval2410 }}" --password-stdin
+        run: echo "${{ dckr_pat_-HzjZjfEtuXs_wMdUDzuD4ztw5U }}" | docker login -u "${{ keval2410 }}" --password-stdin
 
       - name: Tag image
         run: docker tag day5-demo ${{ secrets.DOCKER_USERNAME }}/day5-demo:latest
